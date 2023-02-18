@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Main - 0-positive_or_negative.c
+ * main - 0-positive_or_negative.c
  *
  * Description: Positive anything is better than negative nothing task
  *
