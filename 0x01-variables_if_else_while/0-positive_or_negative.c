@@ -4,7 +4,7 @@
 /*
  * Main - 0-positive_or_negative.c
  *
- * Description: '0. Positive anything is better than negative nothing task'
+ * Description: Positive anything is better than negative nothing task
  * 
  * Return: 0(Success)
  */
