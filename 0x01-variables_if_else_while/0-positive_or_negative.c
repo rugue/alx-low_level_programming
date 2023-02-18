@@ -4,7 +4,7 @@
 /*
  * Main - 0-positive_or_negative.c
  *
- * Return 0(Success)
+ * Return: 0(Success)
  */
 
 int main(void)
