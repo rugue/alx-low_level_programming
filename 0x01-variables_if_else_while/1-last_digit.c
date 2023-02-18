@@ -6,7 +6,7 @@
  *
  * Description: I'm learning
  *
- * Result: 0(Success)
+ * Return: 0(Success)
  */
 
 
