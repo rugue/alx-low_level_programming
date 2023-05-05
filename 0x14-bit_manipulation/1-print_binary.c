@@ -1,26 +1,46 @@
 #include "main.h"
-
 /**
- * printBinary - this prints the binary equivalent for a decimal
- * @n: number in binary to print
+ * _power - calculat
+ * @base: base of  exponet
+ * @pow: power of  exponet
+ * Return: value of base and power
+ */
+unsigned long int _power(unsigned int base, unsigned int pow)
+{
+	unsigned long int num;
+	unsigned int i;
+
+	num = 1;
+	for (i = 1; i <= pow; i++)
+		num *= base;
+	return (num);
+}
+/**
+ * print_binary - this helps prints the binary repretion of a numb
+ * @n: num of prented
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
-	int i, count = 0;
-	unsigned long int current;
+	unsigned long int dev, result;
+	char flag;
 
-	for (i = 63; i >= 0; i--)
+	flag = 0;
+	dev = _power(2, sizeof(unsigned long int) * 8 - 1);
+
+	while (dev != 0)
 	{
-		current = n >> i;
-
-		if (current & 1)
+		result = n & dev;
+		if (result == dev)
 		{
+			flag = 1;
 			_putchar('1');
-			count++;
+
 		}
-		else if (count)
+		else if (flag == 1 || dev == 1)
+		{
 			_putchar('0');
+		}
+		dev >>= 1;
 	}
-	if (!count)
-		_putchar('0');
 }
