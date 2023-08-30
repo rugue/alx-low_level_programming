@@ -11,7 +11,6 @@ void _print_rev_recursion(char *s)
 {
 	if (*s == '\0') /* The base case: end of string */
 	{
-		_putchar('\n'); /* Print new line character */
 		return;
 	}
 
